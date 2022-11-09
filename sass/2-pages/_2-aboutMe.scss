@@ -1,0 +1,44 @@
+.aboutMe {
+    width: auto;
+    height: auto;
+
+    &_name {
+
+        margin-bottom: 5.1rem;
+
+        font-family: 'Encode Sans Semi Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 70px;
+        color: #374A69;
+
+    }
+
+    &_qualification {
+
+        margin-bottom: 5.1rem;
+
+
+        font-family: 'Encode Sans Semi Condensed';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        
+        letter-spacing: 0.05em;
+        
+        color: rgba(55, 74, 105, 0.83);
+    }
+
+
+
+    &_main-text {
+        @include page-about-main-txt;   
+    }
+
+}
+
+.mian-text-aboutMe {
+    grid-column: 2 / 8;
+    @include page-about-main-txt;   
+}

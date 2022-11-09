@@ -1,0 +1,124 @@
+footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: linear-gradient(90.1deg, #FF74F1 -1.31%, #32B0FF 69.62%, #43E37F 132.12%);
+    padding: 3rem;
+    position: relative;
+}
+
+
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    max-width: 200rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media only screen and (max-width : 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &-logo {
+        position:absolute;
+        font-family: $f-5;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        letter-spacing: 0.05em;
+
+        color: rgb(0, 0, 0);
+
+        @media only screen and (max-width : 924px) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width : 815px) {
+            opacity: 0;
+        }
+
+        @media only screen and (max-width : 600px) {
+            position:unset;
+            margin-top: 1.6rem;
+            margin-bottom: 1.6rem;
+            font-size: 4rem;
+            opacity: 1;
+        }
+
+    }
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            @media only screen and (max-width : 600px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            li {
+                font-family: $f-4;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 10px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: $c-text-6;      
+                background-color: white;
+                border-radius: 5rem;
+                line-height: 26px;
+                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+                a {
+                    padding: 0.2rem 2rem 0.2rem 2rem;
+
+                }
+
+                @media only screen and (max-width : 600px) {
+                    margin-bottom: 1.6rem;
+
+                }
+
+            }
+
+            li:not(:last-child) {
+                margin-right: 2rem;  
+                
+                @media only screen and (max-width : 600px) {
+                    margin-right: unset;  
+
+                }
+            }
+        }
+
+}
+
+.copyr {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: $f-4;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    
+
+}
+
+

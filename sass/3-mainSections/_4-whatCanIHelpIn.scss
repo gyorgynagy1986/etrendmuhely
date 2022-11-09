@@ -1,0 +1,109 @@
+.whatCanIHelp {
+    @include widthHeight100;
+    @include grid-1440;
+    @media only screen and (max-width : 600px) {
+       display: block;
+       padding: 2rem 2rem 8rem 2rem;
+
+    }
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 12rem;
+
+
+    .design-pattern {
+        position: absolute;
+        right:20rem; 
+        top: 10rem;
+
+        @media only screen and (max-width : 600px) {
+           display: none;
+        }
+    }
+
+}
+
+.text-container {
+    grid-column: 2 / 8;
+    
+    @media only screen and (max-width : 600px) {
+        grid-column: unset;
+    }
+
+    &-h1 {
+        margin-top: 6.3rem;
+        font-family: $f-encode-2;
+        font-weight: 800;
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: $c-text-2;
+        letter-spacing: -0.02em;
+
+        @media only screen and (max-width : 899px) {
+            font-size: 3.5rem;
+            line-height: 38px;
+        }
+       
+        @media only screen and (max-width : 600px) {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            margin-top: 2.3rem;
+
+        }
+    }
+
+    &-h2 {
+        margin-top: 6.3rem;
+        font-family: $f-encode-2;
+        font-weight: 500;
+        line-height: 33px;
+        font-size: 2rem;
+        color: $c-text-2;
+
+        @media only screen and (max-width : 600px) {
+            line-height: 28px;
+            font-size: 1.8rem;
+        }
+    }
+
+    &-list {
+        margin-top: 4.1rem;
+        padding: 2rem;
+        background-color: $-col5;
+        border-radius: 1rem;
+
+        li {
+            font-family: $f-encode-2;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 33px;
+            letter-spacing: 0.05em;
+            color: $c-text-2;
+            list-style:disc;
+            
+            @media only screen and (max-width : 600px) {
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+        
+    }
+
+    &-h3 {
+        margin-top: 4.1rem;
+        font-family: $f-encode-2;
+        line-height: 25px;
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: $c-text-2;
+
+        @media only screen and (max-width : 600px) {
+            line-height: 24px;
+            font-size: 1.7rem;
+        }
+    }
+
+}
+
+

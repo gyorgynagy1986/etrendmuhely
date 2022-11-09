@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@700;800;900&family=Encode+Sans:wght@100;200;300;500;700;800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Encode+Sans+Semi+Condensed&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
+//FONTS
+
+$f-encode:'Encode Sans', sans-serif;
+$f-encode-2:' Encode Sans Semi Condensed', sans-serif;
+$f-ro:'Roboto', sans-serif;
+$f-4: 'Inter', sans-serif;
+$f-5: 'Passions Conflict', cursive;
+
+
+
+// COLORS
+
+$color-white: #FFFF;
+$color-backround:#FBFCFF;
+
+$c-text:#7587A7; 
+$c-text-2: #374A69; 
+$-text-3:#303030;
+$-text-4:#7a7979;
+$c-text-5:#333333;
+$c-text-6:#395c95;
+
+$-col1:#FF0066;
+$-col2:#0097F5;
+$-col3:#43E37F;
+$-col4:#07C22B;
+$-col5:#F8FCFF;
+$-col-6:#68E1FD;
+$-col-7:#FF74F1;
+$-col-8:#7eb9ffba;
+
+$c-btn-linear:linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 116.84%);
+// $c-btn-linear: linear-gradient(89.45deg,$-col2 -81.76%, $-col3 141.16%);
+$c-btn-linear-2: linear-gradient(to right, $-col1 0%, $-col2 50%, $-col2 90%);  
+$c-btn-linear-3: linear-gradient(to right, $-col3 0%, $-col2 30%, $-col1 90%);  
+
+
+// MEDIA QUERIES
+
+$mobile-1 : 714px;
+$mobile-2 : 600px;
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.mb-10 {
+    margin-bottom: 10rem;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.min-height-0-prefix {
+    min-height: 0px !important;
+   
+    @media only screen and (max-width : 600px) {
+        height: auto !important;
+    }
+
+    @media only screen and (max-width : 768px) {
+        padding: 0rem !important;
+    }
+}
+
+.about-prefix-grid-rows {
+    grid-template-rows:unset !important ;
+}
+
+.about-prefix-grid-col {
+    grid-template-columns: auto !important ;
+}
+
+.nav-prefix-contact {
+    width: 100% !important;
+    margin: 0 auto;
+}
+
+
+@mixin widthHeight100 {
+    width:100%;
+    height: 100%;
+}
+
+
+@mixin grid-1440 {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%,);
+    position: relative;
+}
+
+
+@mixin inputPlaceholder {
+    font-family: $f-ro;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #374a699d; 
+}
+
+
+@mixin page-about-main-txt {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: #374A69;
+}
+
+
+
+@mixin section-1-txt-main {
+    font-family: $f-encode-2;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 6rem;
+    padding-right: 0.4rem;
+    letter-spacing: -0.1em;
+    background: rgba(0, 151, 245, 0.78);
+    //background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 116.84%);
+
+     // background: linear-gradient(82.7deg, $-col4 -53.53%, $-col2 116.84%);
+     // background: linear-gradient(149.74deg, #0097F5 -7.31%, #0097F5 58.33%, #FF0066 104.28%);
+     // background: linear-gradient(89.74deg, #0097F5 -67.57%, #374A69 73.81%);
+     // background: linear-gradient(82.7deg, $-col1 -53.53%, $-col2 116.84%);
+     // background: linear-gradient(149.74deg, #0097F5 -7.31%, #0097F5 58.33%, #FF0066 104.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+// GRADIENTS
+
+@mixin gradientMainHeadTitle {
+//    background: linear-gradient(82.7deg, $-col4 -53.53%, $-col2 116.84%);
+    //background: linear-gradient(149.74deg, #0097F5 -7.31%, #0097F5 58.33%, #FF0066 104.28%);
+    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 116.84%);
+   // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+  
+
+
+

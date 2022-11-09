@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="JS/main.js"></script>
+    <title>Étrendműhely</title>
+</head>
+<body>
+    <header class="header min-height-0-prefix">
+        <div class="header-hambi"><img id="mobileMenu" width="40px" height="40px" src="/assests/hambi-bambi.svg" alt="#"></div>                       
+<!--MOBILE MNEU-->
+<div class="mobile_menu_container hidden scale-in-tr">
+       
+    <div class="flex-mobile-container">
+        <div class="x"><img id="mobile-close" src="/assests/mobile/x.png" alt="mobile-close"></div>
+        
+        
+        <ul class="nav_ul_mobile">
+            <li class="nav_ul_mobile_li"><a href="index.html">home</a></li>
+            <li class="nav_ul_mobile_li"><a href="#">rólam</a></li>
+            <li class="nav_ul_mobile_li"><a href="#">hogyan dolgozom</a></li>
+            <li class="nav_ul_mobile_li"><a href="#">tanácsadás</a></li>
+            <li class="nav_ul_mobile_li"><a href="#">konzultáció</a></li>
+            <li class="nav_ul_mobile_li"><a href="kapcsoalt.html">kapcsolat</a></li>
+        </ul>
+
+        <div class="tooll-bar">
+           <a href="index.html"><img src="../assests/mobile/home.png" alt="főoldal mobile gomb"></a> 
+            <button class="mobile-button"><a href="kapcsoalt.html">KAPCSOLAT</a></button>
+           <a href="kapcsolat.html"><img src="../assests/mobile/email.png" alt="kapcsolat mobil gomb"></a>
+        </div>
+    </div>
+
+    </div>
+    <!--MOBILE MNEU END-->
+    </header>
+    <section class="form">  
+        <nav class="nav nav-prefix-contact">
+            <ul class="nav_ul clolor-form">
+                <li class="nav_ul_li"><a href="index.html">home</a></li>
+                <li class="nav_ul_li"><a href="">rólam</a></li>
+                <li class="nav_ul_li"><a href="">hogyan dolgozom</a></li>
+                <li class="nav_ul_li"><a href="">tanácsadás</a></li>
+                <li class="nav_ul_li"><a href="">konzultáció</a></li>
+            </ul>
+            <button class="nav_btn">kapcsolat</button>
+        </nav>
+
+        <div class="form-headertextContent">
+        </div>
+        <div class="form-container"> 
+                <div class="form-container-1">
+                     <form  method="post" action="#" class="form-container-1-form">
+
+                        <div class="group">
+                            <input type="text" class="input" name ="name" placeholder="Név" id="name" required>
+                            <label for="name"></label>
+                        </div>
+            
+                        <div class="group">
+                            <input type="email" name="email" class="input"  placeholder="Email cím" id="email"  required>
+                            <label for="email"></label>
+                        </div>
+        
+                        <div class="group">
+                            <textarea type="message" name="message"class="text" placeholder="Üzenet" id="message" required></textarea>
+                            <label for="message"></label>
+                        </div>
+            
+                        <div class="submit_button">
+                            <input type="submit" value="KÜLDÉS" class=" send_contact-button">
+                                <!-- Google reCAPTCHA box -->
+                                <div class="captcha">
+                                    <div class="g-recaptcha" data-sitekey="" data-callback="removeFakeCaptcha"></div>
+                                    <input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+                                </div>
+                        </div>
+        
+                    </form> 
+                   
+                </div>
+                
+                <div class="form-container-2">
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem ipsum <span>dolor sit amet,</span> consectetur adipiscing elit. Quam nunc non fermentum mi</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nunc non fermentum mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nunc non fermentum mi </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nunc non fermentum mi </p>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+         <p class="footer-content-logo">Étrendműhely</p>
+                
+                 <ul>
+                     <li><a href="#">rólam</a></li>
+                     <li><a href="#">tanácsadás</a></li>
+                     <li><a href="#">konzultáció</a></li>
+                     <li><a href="#">konzultáció</a></li>
+                 </ul>
+     </div>
+     <div class="copyr">
+         <p>Copyright © 2022 Hódi Lilla Étrendműhely</p>
+     </div>
+</footer>
+
+    
+</body>
+</html>
