@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap");
+.bgc {
+  background-color: #FBFCFF; }
+
 .mb-4 {
   margin-bottom: 4rem; }
 
@@ -11,6 +14,16 @@
 
 .mt-10 {
   margin-top: 10rem; }
+
+.mt-1-nav-prefix {
+  margin-top: 1.2rem; }
+  @media only screen and (max-width: 997px) {
+    .mt-1-nav-prefix {
+      margin-top: 0; } }
+
+@media only screen and (max-width: 768px) {
+  .padding-mobile-2 {
+    padding: 2rem; } }
 
 .hidden {
   display: none; }
@@ -247,6 +260,30 @@
   line-height: 23px;
   letter-spacing: 0.1em;
   color: #374A69; }
+
+.header-rolam {
+  width: 100%;
+  height: 100%;
+  background-color: #FBFCFF;
+  min-height: 800px; }
+  @media only screen and (max-width: 768px) {
+    .header-rolam {
+      padding: 2rem; } }
+  .header-rolam-hambi {
+    display: none; }
+    @media only screen and (max-width: 680px) {
+      .header-rolam-hambi {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        top: 0;
+        left: 0px;
+        z-index: 11;
+        background-color: #FBFCFF; }
+        .header-rolam-hambi img {
+          margin-right: 20px; } }
 
 .header {
   width: 100%;
@@ -1243,9 +1280,8 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 10%;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  height: auto; }
+  height: auto;
+  margin-bottom: 10%; }
 
 .swiper {
   width: 100%;
