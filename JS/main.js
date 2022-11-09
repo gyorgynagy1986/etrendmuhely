@@ -1,6 +1,6 @@
 const mobileMenu = document.getElementById('mobileMenu');
 const mobileContainer = document.querySelector('.mobile_menu_container');
-const hederPaddingFix = document.querySelector('.header');
+const hederPaddingFix = document.querySelector('.mobil-header-selector');
 const html = document.querySelector('html');
 const mobileClose = document.getElementById('mobile-close');
 const mobileToolBar = document.querySelector('.tooll-bar');
