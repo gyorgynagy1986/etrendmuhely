@@ -9,4 +9,6 @@
  [] Bizonyítványok bővítése
  [] Sticky NAV
  [] slider fixálása
+ [] bizonyítványok link
  [] mobile menu redesign
+ [] kapcsolatok nav down redesign or remove
