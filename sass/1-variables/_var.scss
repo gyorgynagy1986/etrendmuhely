@@ -46,6 +46,21 @@ $c-btn-linear-3: linear-gradient(to right, $-col3 0%, $-col2 30%, $-col1 90%);
 $mobile-1 : 714px;
 $mobile-2 : 600px;
 
+
+// TYPO
+
+@mixin section-headers {
+    margin-top: 6.3rem;
+    font-family: $f-encode-2;
+    font-weight: 800;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: $c-text-2;
+    letter-spacing: -0.02em;
+}
+
+
+
 .bgc {
   background-color: $color-backround;
 }
@@ -76,8 +91,6 @@ $mobile-2 : 600px;
     }    
 }
 
-
-
 .hidden {
     display: none;
 }
@@ -106,8 +119,6 @@ $mobile-2 : 600px;
     width: 100% !important;
     margin: 0 auto;
 }
-
-
 
 @mixin widthHeight100 {
     width:100%;

@@ -4,6 +4,16 @@ const hederPaddingFix = document.querySelector('.mobil-header-selector');
 const html = document.querySelector('html');
 const mobileClose = document.getElementById('mobile-close');
 const mobileToolBar = document.querySelector('.tooll-bar');
+const navLinksMobile = document.querySelectorAll('.nav_ul_mobile_li')
+
+navLinksMobile.forEach((links) => {
+    links.addEventListener('click', (e)=> {
+        mobileContainer.classList.add('hidden');
+        hederPaddingFix.style.padding = '20px';
+        mobileMenu.style.opacity = '1';
+        html.style.overflowY = 'visible';
+    })
+} )
 
 
 

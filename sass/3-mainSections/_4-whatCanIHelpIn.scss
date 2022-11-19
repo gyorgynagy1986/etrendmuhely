@@ -6,6 +6,7 @@
        padding: 2rem 2rem 8rem 2rem;
 
     }
+    
     margin: 0 auto;
     position: relative;
     padding-bottom: 12rem;
@@ -31,13 +32,8 @@
     }
 
     &-h1 {
-        margin-top: 6.3rem;
-        font-family: $f-encode-2;
-        font-weight: 800;
-        font-size: 4rem;
-        text-transform: uppercase;
-        color: $c-text-2;
-        letter-spacing: -0.02em;
+       
+        @include section-headers;
 
         @media only screen and (max-width : 899px) {
             font-size: 3.5rem;
