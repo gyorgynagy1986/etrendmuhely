@@ -8,13 +8,20 @@
     .grid-1440-prices {
         @include widthHeight100;
         @include grid-1440;
+        
+    
         margin-inline: auto;
-       
-        @media only screen and (max-width : 600px) {
+
+        @media (max-width:1024px) and (min-width:767px) {
             display: block;
             padding: 2rem 2rem 8rem 2rem;
-     
+        }
+       
+        @media only screen and (max-width : 1024px) {
+            display: block;
          }
+
+         
 
     }
 
@@ -22,17 +29,18 @@
        
         grid-column: 2 / 8;
 
-        @media only screen and (max-width : 600px) {
-            grid-column: unset;
+        @media only screen and (max-width : 1024px) {
+            margin-bottom: 12rem;
         }
        
 
         @include section-headers;
        
         @media only screen and (max-width : 899px) {
+            width: 70%;
             font-size: 2.8rem;
             line-height: 38px;
-            margin-bottom: 5rem;
+            margin-bottom: 8rem;
         }
        
         @media only screen and (max-width : 600px) {
@@ -41,6 +49,11 @@
             letter-spacing: -0.04em;
             margin-top: 2.3rem;
 
+        }
+
+        @media only screen and (max-width : 899px) {
+            width: 100%;
+            
         }
     }
 

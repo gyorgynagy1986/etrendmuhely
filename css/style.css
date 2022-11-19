@@ -971,6 +971,10 @@
   margin: 0 auto;
   position: relative;
   padding-bottom: 12rem; }
+  @media (max-width: 1024px) and (min-width: 767px) {
+    .whatCanIHelp {
+      display: block;
+      padding: 2rem 2rem 8rem 2rem; } }
   @media only screen and (max-width: 600px) {
     .whatCanIHelp {
       display: block;
@@ -1059,10 +1063,13 @@
     grid-template-columns: repeat(8, 12.5%);
     position: relative;
     margin-inline: auto; }
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 1024px) and (min-width: 767px) {
       .price-list .grid-1440-prices {
         display: block;
         padding: 2rem 2rem 8rem 2rem; } }
+    @media only screen and (max-width: 1024px) {
+      .price-list .grid-1440-prices {
+        display: block; } }
   .price-list__tite {
     grid-column: 2 / 8;
     margin-top: 6.3rem;
@@ -1072,20 +1079,24 @@
     text-transform: uppercase;
     color: #374A69;
     letter-spacing: -0.02em; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1024px) {
       .price-list__tite {
-        grid-column: unset; } }
+        margin-bottom: 12rem; } }
     @media only screen and (max-width: 899px) {
       .price-list__tite {
+        width: 70%;
         font-size: 2.8rem;
         line-height: 38px;
-        margin-bottom: 5rem; } }
+        margin-bottom: 8rem; } }
     @media only screen and (max-width: 600px) {
       .price-list__tite {
         font-size: 28px;
         font-weight: 700;
         letter-spacing: -0.04em;
         margin-top: 2.3rem; } }
+    @media only screen and (max-width: 899px) {
+      .price-list__tite {
+        width: 100%; } }
   .price-list__flex-container {
     grid-column: 2 / 8;
     position: relative;
@@ -1206,7 +1217,7 @@ footer {
     @media only screen and (max-width: 924px) {
       .footer-content-logo {
         font-size: 3rem; } }
-    @media only screen and (max-width: 815px) {
+    @media only screen and (max-width: 1185px) {
       .footer-content-logo {
         opacity: 0; } }
     @media only screen and (max-width: 600px) {
@@ -1240,11 +1251,20 @@ footer {
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25); }
       .footer-content ul li a {
         padding: 0.2rem 2rem 0.2rem 2rem; }
+        @media (max-width: 829px) and (min-width: 600px) {
+          .footer-content ul li a {
+            padding: 0.2rem 1rem 0.2rem 1rem; } }
+      @media (max-width: 829px) and (min-width: 600px) {
+        .footer-content ul li {
+          font-size: 9px; } }
       @media only screen and (max-width: 600px) {
         .footer-content ul li {
           margin-bottom: 1.6rem; } }
     .footer-content ul li:not(:last-child) {
       margin-right: 2rem; }
+      @media (max-width: 829px) and (min-width: 600px) {
+        .footer-content ul li:not(:last-child) {
+          margin-right: .8rem; } }
       @media only screen and (max-width: 600px) {
         .footer-content ul li:not(:last-child) {
           margin-right: unset; } }
