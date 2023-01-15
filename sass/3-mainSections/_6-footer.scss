@@ -50,10 +50,10 @@ footer {
         }
 
         @media only screen and (max-width : 600px) {
-            position:unset;
-            margin-top: 1.6rem;
-            margin-bottom: 1.6rem;
-            font-size: 4rem;
+            position: unset;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            font-size: 6rem;
             opacity: 1;
         }
 
@@ -125,7 +125,7 @@ footer {
     font-family: $f-4;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 15px;
     color: #FFFFFF;
     position: absolute;

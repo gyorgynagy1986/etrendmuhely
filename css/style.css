@@ -1142,7 +1142,8 @@ nav.sticky {
       @media only screen and (max-width: 600px) {
         .text-container-list li {
           font-size: 14px;
-          line-height: 25px; } }
+          line-height: 21px;
+          margin-bottom: 1rem; } }
   .text-container-h3 {
     margin-top: 4.1rem;
     font-family: " Encode Sans Semi Condensed", sans-serif;
@@ -1328,9 +1329,9 @@ footer {
     @media only screen and (max-width: 600px) {
       .footer-content-logo {
         position: unset;
-        margin-top: 1.6rem;
-        margin-bottom: 1.6rem;
-        font-size: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        font-size: 6rem;
         opacity: 1; } }
   .footer-content ul {
     width: 100%;
@@ -1382,7 +1383,7 @@ footer {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 15px;
   color: #FFFFFF;
   position: absolute;
