@@ -6,30 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
             name="description"
-            content="Mary's simple recipe for maple bacon donuts
-                    makes a sticky, sweet treat with just a hint
-                    of salt that you'll keep coming back for.">
+            content="">
 
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="JS/main.js"></script>
-    <title>Étrendműhely</title>
+    <script defer src="JS/sticky.js"></script>
+    <title>Étrendműhely - Hódi Lilla táplálkozástudományi szakember</title>
 </head>
 <body>
     <header class="header mobil-header-selector" >
-        <section class="grid-1440">
-            <div class="header-hambi"><img id="mobileMenu" width="40px" height="40px" src="/assests/hambi-bambi.svg" alt="#"></div>                       
+    <section class="grid-1440">
+        <div class="header-hambi"><img id="mobileMenu" width="40px" height="40px" src="/assests/hambi-bambi.svg" alt="#"></div>                       
         
     <!--MOBILE MNEU-->
     <div class="mobile_menu_container hidden scale-in-tr">
        
     <div class="flex-mobile-container">
         <div class="x"><img id="mobile-close" src="/assests/mobile/x.png" alt="mobile-close"></div>
-        
-        
         <ul class="nav_ul_mobile">
             <li class="nav_ul_mobile_li"><a href="index.html">home</a></li>
             <li class="nav_ul_mobile_li"><a href="rolam.html">rólam</a></li>
-            <li class="nav_ul_mobile_li"><a href="#arak">árak</a></li>
+          <!--  <li class="nav_ul_mobile_li"><a href="#arak">árak</a></li>-->
             <li class="nav_ul_mobile_li"><a href="#tanacsadas">tanácsadás</a></li>
             <li class="nav_ul_mobile_li"><a href="#konzultacio">konzultáció</a></li>
             <li class="nav_ul_mobile_li"><a href="#help">amiben segíhetek</a></li>
@@ -45,12 +42,11 @@
 
     </div>
     <!--MOBILE MNEU END-->
-
             <nav class="nav">
                 <ul class="nav_ul">
                     <li class="nav_ul_li"><a href="index.html">home</a></li>
                     <li class="nav_ul_li"><a href="rolam.html">rólam</a></li>
-                    <li class="nav_ul_li"><a href="#arak">árak</a></li>
+                  <!--    <li class="nav_ul_li"><a href="#arak">árak</a></li> -->
                     <li class="nav_ul_li"><a href="#tanacsadas">tanácsadás</a></li>
                     <li class="nav_ul_li"><a href="#konzultacio">konzultáció</a></li>
                     <li class="nav_ul_li"><a href="#help">amiben segíthetek</a></li>
@@ -68,7 +64,7 @@
                     <div class="HeaderMain_text_check"><img src="/assests/check.svg" width="20px" height="15px" alt="#"><p>Fiatalos légkör</p></div>
                     <div class="HeaderMain_text_check"><img src="/assests/check.svg" width="20px" height="15px" alt="#"><p>Problémaorientáltság</p></div>
                 </div>
-                <btn class="HeaderMain_btn-mobile"> kapcsolat</btn>
+                <btn class="HeaderMain_btn-mobile"> <a href="kapcsolat.html">kapcsolat</a></btn>
                 <div class="HeaderMain_photo">
                     <img src="/assests/lilla.png" width="362px" height="367px" alt="lilla">
                 </div>
@@ -104,9 +100,9 @@
                     <p class="section-1-textbox-txt">Az étrendkiegészítők felülvizsgálatával. Megelőzési vagy terápiás érendi protokollok egyénre igazítása és étrendkiegészítők célzott javaslata.</p>
                 </div>
             </div>
-        </section>
-        <section id="konzultacio" class="consultation">
-            <div class="grid-1440">
+    </section>
+    <section id="konzultacio" class="consultation">
+            <div class="grid-1440 row-prefix">
                 
                 <div class="consultation-photo"> <img src="/assests/consultation.svg" loading="lazy" width="540px" height="545px" alt="consultation"></div>
                
@@ -120,8 +116,8 @@
                                 <div class="number-pos"><p>1</p></div>
                             </div>
                             <div class="text">
-                                <h3 class="text-h3">Emailes Kapcsolatfelvétel</h3>
-                                <p class="text-p">Mely során egy összefoglalást szeretnék kérni arról, hogy milyen problémával fordulsz hozzám.
+                                <h3 class="text-h3">Kapcsolatfelvétel</h3>
+                                <p class="text-p">Az oldal alján találod a kapcsolatfelvételi lehetőséget. Kérlek foglald össze, hogy miben lehetek a segítségedre.
                                 </p>
                             </div>
                         </div>
@@ -133,8 +129,8 @@
                                 <div class="number-pos"><p>2</p></div>
                             </div>
                             <div class="text">
-                                <h3 class="text-h3">Emailes Egyeztetés</h3>
-                                <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nunc non fermentum mi </p>
+                                <h3 class="text-h3">Egyeztetés</h3>
+                                <p class="text-p">Mely során felveszem veled a kapcsolatot és megbszéljük az együttműködésünk lehetőségét és további részleteit.</p>
                             </div>
                         </div>
                     </div>
@@ -146,7 +142,7 @@
                             </div>
                             <div class="text">
                                 <h3 class="text-h3">Első Konzultáció</h3>
-                                <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nunc non fermentum mi </p>
+                                <p class="text-p">Igény szerint személyesen vagy online. erre az alkalomra már a személyedre szabott tanácsokkal készülök, melyeket a konzultáció alatt tüzetesen átbeszélünk és szükség esetén kiegészítünk.</p>
                             </div>
                         </div>
                     </div>
@@ -157,16 +153,30 @@
                                 <div class="number-pos"><p>4</p></div>
                             </div>
                             <div class="text">
-                                <h3 class="text-h3">Kontroll Konzultáció</h3>
-                                <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nunc non fermentum mi </p>
+                                <h3 class="text-h3">Emailes kapcsolattartás</h3>
+                                <p class="text-p">Nem vagy egyedül az életmódváltás alatt! Bármikor ha segítségre van szükséged keress bizalommal.</p>
                             </div>
                         </div>
                     </div>
+                   
+                    <div class="grid-1440-steps_boxis">
+                        <div class="felxContainer">
+                            <div class="cirlce">
+                                <div class="number-pos"><p>5</p></div>
+                            </div>
+                            <div class="text">
+                                <h3 class="text-h3">Kontroll konzultáció</h3>
+                                <p class="text-p">Indokolt esetben vagy igény esetén.</p>
+                            </div>
+                        </div>
+                    </div>
+    
                 </div>
-            </div>
-        </section>
 
-        <section id="help" class="whatCanIHelp">
+            </div>
+    </section>
+
+    <section id="help" class="whatCanIHelp">
             <div class="design-pattern hidden">
                 <img src="/assests/des-material.svg" loading="lazy" width="135px" height="106px" alt="#"></div>
             </div>
@@ -208,20 +218,12 @@
                 </div>
                 <h3 class="text-container-h3">A fenti tünetek legtöbbször nem külön-külön, hanem együtt, tünetcsoportként jelentkeznek. Meglétük hátterében potenciálisan állhat a felborult bélflóra-egyensúly, a kontaminált vékonybél, emésztési és felszívódási problémák - esetleg a kettő együtt, mint malasszimilációs zavar -, a bél gyulladásos állapota és az ezekből következő mikrotápanyaghiányok, anyagcserezavarok és hormonális egyensúlytalanságok.</h3>
                 <h3 class="text-container-h3">Fontos megjegyeznünk, hogy ezek a tünetek is megkövetelik a megfelelő orvosi utánajárást. Éppen ezért szükség esetén én is célzott laborjavaslatokkal, illetve szakorvosoz továbbiráyítással fogok élni. A táplálkozástudományt minden esetben, mint komplementer medicinát hívhatjuk segítségül és célunk elsősorban a komolyabb problémák megelőzése és az egészség helyreállítása.</h3>
-        </section>
-       
-        <section id="arak" class="price-list">
-            
+    </section>
+       <!-- <section id="arak" class="price-list">
             <div class="grid-1440-prices">
-                
                 <h1 class="price-list__tite">táplálkozási tanácsadás árai</h1>
-                
                 <div class="price-list__flex-container">
-                  
-                    
                     <img class="design-patt" src="/assests/des-material.svg" loading="lazy" width="135px" height="106px" alt="#">
-                
-                  
                     <div class="price-list__flex-container__cards">
                         <div class="title">Első konzultáció</div>
                         <div class="time">90-120 perc</div>
@@ -233,31 +235,24 @@
                         <div class="time">60 perc</div>
                         <div class="price">9.900-</div>
                     </div>
-
                 </div>
-            
-            
-            
-            
             </div>
-        </section>
+        </section> -->
     </main> 
     <footer>
-               <div class="footer-content">
-                <p class="footer-content-logo">Étrendműhely</p>
-                       
-                        <ul>
-                            <li><a href="rolam.html">rólam</a></li>
-                            <li><a href="#arak">árak</a></li>
-                            <li><a href="#tanacsadas">tanácsadás</a></li>
-                            <li><a href="#konzultacio">konzultáció</a></li>
-                            <li><a href="#help">amiben segíthetek</a></li>
-                            <li><a href="kapcsolat.html">kapocsalt</a></li>
-                        </ul>
-            </div>
-            <div class="copyr">
-                <p>Copyright © 2022 Hódi Lilla Étrendműhely |  webdesign by <a href="https://studiobromo.hu/">studiobromo.hu</a></p>
-            </div>
+       <div class="footer-content">
+           <p class="footer-content-logo">Étrendműhely</p>
+            <ul>
+                <li><a href="rolam.html">rólam</a></li>
+                <li><a href="#tanacsadas">tanácsadás</a></li>
+                <li><a href="#konzultacio">konzultáció</a></li>
+                <li><a href="#help">amiben segíthetek</a></li>
+                <li><a href="kapcsolat.html">kapocsalt</a></li>
+            </ul>
+       </div>
+       <div class="copyr">
+           <p>Copyright © 2022 Hódi Lilla Étrendműhely | A weboldalt készítette és üzemelteti :  <a href="https://studiobromo.hu/">studiobromo.hu</a></p>
+       </div>
     </footer>
     
 </body>

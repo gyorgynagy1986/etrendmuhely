@@ -1,7 +1,7 @@
 .header {
     @include widthHeight100;
     background-color:$color-backround;
-    min-height: 800px;
+    min-height: 100vh;
     
     @media only screen and (max-width : 600px) {
         height: 100vh;
@@ -325,5 +325,47 @@
 
 
 
+nav.sticky {
+    position: fixed;
+    height: 10rem;
+    opacity: 96%;
+    left: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    background: #fff;
+    z-index: 1000001101010000;
+    box-shadow: 1px 6px 22px -12px rgba(150, 150, 150, 0.34)
+}
+  
+  .nav-sticky-prefix {
+    height: 10rem;
+    width: 100%; 
+    left: 0;
+    background-color: black;
+}
 
 
+    .slide-in-top {
+        -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+      
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0; }
+   100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }

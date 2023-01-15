@@ -44,7 +44,7 @@
   grid-template-columns: auto !important; }
 
 .nav-prefix-contact {
-  width: 100% !important;
+  width: 95% !important;
   margin: 0 auto; }
 
 .form {
@@ -289,7 +289,7 @@
   width: 100%;
   height: 100%;
   background-color: #FBFCFF;
-  min-height: 800px; }
+  min-height: 100vh; }
   @media only screen and (max-width: 600px) {
     .header {
       height: 100vh; } }
@@ -534,6 +534,47 @@
     @media only screen and (max-width: 680px) {
       .HeaderMain_photo {
         display: none; } }
+
+nav.sticky {
+  position: fixed;
+  height: 10rem;
+  opacity: 96%;
+  left: 0;
+  padding-left: 2%;
+  padding-right: 2%;
+  background: #fff;
+  z-index: 1000001101010000;
+  box-shadow: 1px 6px 22px -12px rgba(150, 150, 150, 0.34); }
+
+.nav-sticky-prefix {
+  height: 10rem;
+  width: 100%;
+  left: 0;
+  background-color: black; }
+
+.slide-in-top {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
 
 .pillars {
   width: 100%;
@@ -834,6 +875,13 @@
     .consultation {
       padding: 5.5rem 2rem 5.5rem 2rem; } }
 
+.row-prefix {
+  grid-template-rows: repeat(10, 121.5px) !important; }
+  @media only screen and (max-width: 997px) {
+    .row-prefix {
+      grid-template-rows: auto !important;
+      grid-template-columns: auto !important; } }
+
 .grid-1440 {
   margin: 0 auto;
   width: 100%;
@@ -884,7 +932,7 @@
   .grid-1440-steps {
     width: 100%;
     max-width: 486px;
-    min-height: 710px;
+    min-height: 946px;
     padding-top: 1.1rem;
     padding-left: 3.7rem;
     padding-right: 3.7rem;
@@ -945,7 +993,7 @@
             font-family: 'DM Serif Display';
             font-style: normal;
             font-weight: 400;
-            font-size: 18px;
+            font-size: 22px;
             line-height: 26px;
             letter-spacing: 0.1em;
             text-transform: capitalize;
@@ -954,7 +1002,7 @@
           .grid-1440-steps_boxis .felxContainer .text-p {
             font-family: 'Encode Sans Semi Condensed';
             font-style: normal;
-            font-weight: 500;
+            font-weight: 400;
             font-size: 14px;
             line-height: 20px;
             letter-spacing: 0.1em;
@@ -1233,7 +1281,7 @@ footer {
     justify-content: center; }
     @media only screen and (max-width: 600px) {
       .footer-content ul {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center; } }

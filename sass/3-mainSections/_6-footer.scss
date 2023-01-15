@@ -65,7 +65,7 @@ footer {
             justify-content: center;
 
             @media only screen and (max-width : 600px) {
-                display: flex;
+                display: none;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
