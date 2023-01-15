@@ -46,6 +46,25 @@ $c-btn-linear-3: linear-gradient(to right, $-col3 0%, $-col2 30%, $-col1 90%);
 $mobile-1 : 714px;
 $mobile-2 : 600px;
 
+
+// TYPO
+
+@mixin section-headers {
+    margin-top: 6.3rem;
+    font-family: $f-encode-2;
+    font-weight: 800;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: $c-text-2;
+    letter-spacing: -0.02em;
+}
+
+
+
+.bgc {
+  background-color: $color-backround;
+}
+
 .mb-4 {
     margin-bottom: 4rem;
 }
@@ -56,6 +75,20 @@ $mobile-2 : 600px;
 
 .mt-10 {
     margin-top: 10rem;
+}
+
+.mt-1-nav-prefix {
+    margin-top: 1.2rem; 
+
+    @media only screen and (max-width: 997px) {
+        margin-top: 0; 
+    }
+}
+
+.padding-mobile-2 {
+    @media only screen and (max-width : 768px) {
+        padding: 2rem;
+    }    
 }
 
 .hidden {
@@ -83,10 +116,9 @@ $mobile-2 : 600px;
 }
 
 .nav-prefix-contact {
-    width: 100% !important;
+    width: 95% !important;
     margin: 0 auto;
 }
-
 
 @mixin widthHeight100 {
     width:100%;

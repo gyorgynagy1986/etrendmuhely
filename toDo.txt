@@ -1,0 +1,14 @@
+
+//**************************************************************\\
+
+                                TO DO
+
+ [] Tablet szélesség optimalizálása, a grid hamarabb legyen kiütve! 
+ [] Hover effect
+ [] Egyéb effectek
+ [] Bizonyítványok bővítése
+ [] Sticky NAV
+ [] slider fixálása
+ [] bizonyítványok link
+ [] mobile menu redesign
+ [] kapcsolatok nav down redesign or remove

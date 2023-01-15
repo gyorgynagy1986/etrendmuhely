@@ -1,11 +1,19 @@
 .whatCanIHelp {
     @include widthHeight100;
     @include grid-1440;
+   
+
+    @media (max-width:1024px) and (min-width:767px) {
+        display: block;
+        padding: 2rem 2rem 8rem 2rem;
+    }
+   
     @media only screen and (max-width : 600px) {
        display: block;
        padding: 2rem 2rem 8rem 2rem;
 
     }
+    
     margin: 0 auto;
     position: relative;
     padding-bottom: 12rem;
@@ -31,13 +39,8 @@
     }
 
     &-h1 {
-        margin-top: 6.3rem;
-        font-family: $f-encode-2;
-        font-weight: 800;
-        font-size: 4rem;
-        text-transform: uppercase;
-        color: $c-text-2;
-        letter-spacing: -0.02em;
+       
+        @include section-headers;
 
         @media only screen and (max-width : 899px) {
             font-size: 3.5rem;

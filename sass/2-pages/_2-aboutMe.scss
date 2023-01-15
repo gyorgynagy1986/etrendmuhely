@@ -42,3 +42,40 @@
     grid-column: 2 / 8;
     @include page-about-main-txt;   
 }
+
+
+.header-rolam {
+    @include widthHeight100;
+    background-color:$color-backround;
+    min-height: 800px;
+    
+   // @media only screen and (max-width : 600px) {
+   //     height: 100vh;
+   // }
+//
+    @media only screen and (max-width : 768px) {
+        padding: 2rem;
+    }
+   
+
+    &-hambi {
+        display: none;
+
+        @media only screen and (max-width : 680px) {
+            position: fixed;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: flex-end; 
+            top: 0;
+            left: 0px;
+            z-index: 11;
+            background-color:$color-backround;
+
+            img {
+                margin-right: 20px;
+            }
+
+         }
+    }    
+}
