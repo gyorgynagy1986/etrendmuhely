@@ -2,6 +2,10 @@
     width: 100%;
     background: linear-gradient(90.1deg, #FF74F1 -1.31%, #32B0FF 69.62%, #43E37F 132.12%);
     padding-bottom: 5%;
+
+    @media only screen and (max-width : 600px) {
+        background: linear-gradient(251deg, #FF74F1 -1.31%, #32B0FF 69.62%, #43E37F 132.12%);
+    }
       
 
     &-headertextContent {
@@ -140,6 +144,12 @@
                     .submit_button {
                         display: flex;
                         justify-content: space-between;
+                    
+                        @media only screen and (max-width : 600px) {
+                            justify-content: center;
+
+                        }
+                    
                     }
            
                     @media only screen and (max-width : 1000px) {
@@ -175,19 +185,24 @@
             h2 {
                 font-family: 'DM Serif Display';
                 font-weight: 400;
-                font-size: 32px;
-                line-height: 26px;
+                font-size: 38px;
+                line-height: 45px;
                 letter-spacing: 0.1em;
                 text-align: center;
                 color: white;
                 margin-bottom: 5rem;
+
+                @media only screen and (max-width : 600px) {
+                    font-size: 31px;
+
+                }
             }
 
             p {
                 font-family: $f-ro;
                 font-weight: 400;
-                font-size: 16px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 28px;
                 letter-spacing: 0.1em;
                 color: $-text-3;
                 padding-left: 15%;
@@ -202,6 +217,11 @@
                 @media only screen and (max-width : 1000px) {
                     padding-left: 5%;
                     padding-right: 5%;
+                }
+
+                @media only screen and (max-width : 600px) {
+                    font-size: 16px;
+
                 }
 
                 span {
@@ -241,5 +261,11 @@
         background-color: rgb(231, 231, 231);
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);    }
 
+}
+
+@media only screen and (max-width : 600px) {
+    .footer-color {
+        background: linear-gradient(337deg, #FF74F1 -1.31%, #32B0FF 69.62%, #43E37F 132.12%) !important;
+    }
 }
 
