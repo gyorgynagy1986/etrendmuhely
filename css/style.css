@@ -47,6 +47,62 @@
   width: 95% !important;
   margin: 0 auto; }
 
+@keyframes fadeIn {
+  0% {
+    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 116.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; }
+  10% {
+    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 130.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; }
+  20% {
+    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 150.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; }
+  30% {
+    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 180.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; }
+  40% {
+    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 200.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; }
+  50% {
+    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 222.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; }
+  65% {
+    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 250.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; }
+  75% {
+    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 222.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; }
+  100% {
+    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 180.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; } }
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fade-in2 {
+  animation: fadeIn2 1.5s ease-in; }
+
 .form {
   width: 100%;
   background: linear-gradient(90.1deg, #FF74F1 -1.31%, #32B0FF 69.62%, #43E37F 132.12%);
@@ -420,6 +476,7 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+      animation: fadeIn 4s ease-in infinite;
       margin-top: 12rem;
       font-family: " Encode Sans Semi Condensed", sans-serif;
       font-style: normal;

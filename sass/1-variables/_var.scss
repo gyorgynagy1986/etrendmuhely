@@ -183,14 +183,99 @@ $mobile-2 : 600px;
 @mixin gradientMainHeadTitle {
 //    background: linear-gradient(82.7deg, $-col4 -53.53%, $-col2 116.84%);
     //background: linear-gradient(149.74deg, #0097F5 -7.31%, #0097F5 58.33%, #FF0066 104.28%);
-    background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 116.84%);
+    background: linear-gradient(82.7deg, $-col-7 -53.53%, #0097F5 116.84%);
    // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    animation: fadeIn 4s ease-in infinite;
 }
   
 
+  
+
+@keyframes fadeIn {
+    0% {      background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 116.84%);
+        // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+    }
+
+    10% {
+        background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 130.84%);
+        // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+    }
+
+    20% {
+        background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 150.84%);
+        // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+    }
+
+    30% {
+        background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 180.84%);
+        // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+    }
+
+    40% {
+        background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 200.84%);
+        // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+    }
+
+    50% {
+        background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 222.84%);
+        // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+    }
+
+    65% {
+        background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 250.84%);
+        // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+    }
+    
+
+    75% {
+        background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 222.84%);
+        // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(82.7deg, #FF74F1 -53.53%, #0097F5 180.84%);
+        // background: linear-gradient(to right, #07C22B 0%, #0097F5 30%, #590672 90%);  
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+    }
+
+  }
 
 
+  @keyframes fadeIn2 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .fade-in2 {
+    animation: fadeIn2 1.5s ease-in;
+  }
