@@ -4,14 +4,14 @@
 
     &_name {
 
-        margin-bottom: 5.1rem;
+        margin-bottom: 4rem;
 
         font-family: 'Encode Sans Semi Condensed';
         font-style: normal;
         font-weight: 700;
-        font-size: 48px;
+        font-size: 42px;
         line-height: 70px;
-        color: #374A69;
+        color: $c-text-6;
 
     }
 
@@ -23,11 +23,16 @@
         font-family: 'Encode Sans Semi Condensed';
         font-weight: 600;
         font-size: 24px;
-        line-height: 28px;
-        
+        line-height: 50px;
         letter-spacing: 0.05em;
-        
-        color: rgba(55, 74, 105, 0.83);
+        color:  $c-text-6;
+
+        @media screen and (max-width:600px) {
+            font-size: 16px;
+            line-height: 35px;
+
+        }
+
     }
 
 
