@@ -4,6 +4,20 @@ const swiper = new Swiper('.swiper', {
     loop: true,
 
     autoplay: true,
+
+    breakpoints: {
+      // when window width is >= 320px
+      1208: {
+        slidesPerView: 3,
+        spaceBetween: 0
+      },
+
+      778: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      },
+    
+      },
   
     // If we need pagination
     pagination: {
@@ -11,8 +25,7 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
     },
 
-    slidesPerView: 3,
-    spaceBetween: 0,
+    slidesPerView: 1,
 
     // Navigation arrows
     navigation: {
