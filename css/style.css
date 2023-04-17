@@ -424,7 +424,11 @@
       font-size: 1.4rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
-      color: #25457c; }
+      color: #25457c;
+      position: relative;
+      transition: all .1s ease-in-out; }
+      .nav_ul_li:hover {
+        color: #0097F5; }
       @media only screen and (max-width: 768px) {
         .nav_ul_li {
           margin-right: 1.5rem;
