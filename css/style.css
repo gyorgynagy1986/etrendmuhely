@@ -1071,12 +1071,12 @@ nav.sticky {
         .grid-1440-steps_boxis .felxContainer .text {
           width: 80%; }
           .grid-1440-steps_boxis .felxContainer .text-h3 {
-            font-family: 'DM Serif Display';
+            font-family: 'Encode Sans Semi Condensed';
             font-style: normal;
-            font-weight: 400;
+            font-weight: 600;
             font-size: 22px;
             line-height: 26px;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.004em;
             text-transform: capitalize;
             color: #374A69;
             margin-bottom: .6rem; }
@@ -1084,10 +1084,9 @@ nav.sticky {
             font-family: 'Encode Sans Semi Condensed';
             font-style: normal;
             font-weight: 400;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 20px;
-            letter-spacing: 0.1em;
-            text-transform: lowercase;
+            letter-spacing: 0.003em;
             color: #333333; }
 
 .whatCanIHelp {
